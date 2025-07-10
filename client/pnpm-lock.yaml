@@ -17,6 +17,9 @@ importers:
       client:
         specifier: 'link:'
         version: 'link:'
+      cors:
+        specifier: ^2.8.5
+        version: 2.8.5
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -828,6 +831,10 @@ packages:
   copy@0.1.3:
     resolution: {integrity: sha512-caS3E0dQ7QVKhNZ6rAR2NRo/Vz8LDvY4iycN0dTPm2wTZeJEUJ3kAk7KuBTHbLdWZXQhE+UFTGfvPX1dnUR2SQ==}
     engines: {node: '>=0.10.0'}
+
+  cors@2.8.5:
+    resolution: {integrity: sha512-KIHbLJqu73RGr/hnbrO9uBeixNGuvSQjul/jdFvS/KFSIH1hWVd1ng7zOHx+YrEfInLG7q4n6GHQ9cDtxv/P6g==}
+    engines: {node: '>= 0.10'}
 
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
@@ -2061,6 +2068,10 @@ packages:
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
 
+  vary@1.1.2:
+    resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
+    engines: {node: '>= 0.8'}
+
   vite@7.0.3:
     resolution: {integrity: sha512-y2L5oJZF7bj4c0jgGYgBNSdIu+5HF+m68rn2cQXFbGoShdhV1phX9rbnxy9YXj82aS8MMsCLAAFkRxZeWdldrQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
@@ -2826,6 +2837,11 @@ snapshots:
       graceful-fs: 4.2.11
       lazy-globby: 0.1.1
       mkdirp: 0.5.6
+
+  cors@2.8.5:
+    dependencies:
+      object-assign: 4.1.1
+      vary: 1.1.2
 
   cross-spawn@7.0.6:
     dependencies:
@@ -4151,6 +4167,8 @@ snapshots:
   uri-js@4.4.1:
     dependencies:
       punycode: 2.3.1
+
+  vary@1.1.2: {}
 
   vite@7.0.3(jiti@2.4.2)(lightningcss@1.30.1):
     dependencies:
