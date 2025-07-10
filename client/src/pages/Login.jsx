@@ -13,7 +13,7 @@ export default function Login({ setUser }){
     };
 
     return(
-        <div className="h-screen flex items-center justify-center bg-gray-100">
+        <div className="h-screen flex items-center justify-center bg-gray-300">
             <div className="p-6 bg-white rounded shadow-md w-96">
                 <h1 className="text-xl font-bold mb-4">We Chat</h1>
                 <input 
